@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRunner.AppRunnerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-06-11T09:00:34" hostname="DESKTOP-ACI7R7L" time="28.201">
+  <properties/>
+  <testcase name="runScenario[0](&quot;user login with valid data&quot;, &quot;Optional[Login Module]&quot;)" classname="TestRunner.AppRunnerTest" time="28.201">
+    <failure message="java.lang.NoSuchMethodError: org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(Lorg/openqa/selenium/WebDriver;J)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(Lorg/openqa/selenium/WebDriver;J)V
+	at SearchPage.LoginPage.clickLogin(LoginPage.java:63)
+	at AppStepDefination.LoginStepDefination.clickLoginButton(LoginStepDefination.java:33)
+	at ✽.click login button(file:///C:/Users/Asus/Desktop/MobileAutomation/MobileAutomationWithPOM/src/test/resources/Features/01_appLogin.feature:7)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@login
+Scenario Outline: user login with valid data # src/test/resources/Features/01_appLogin.feature:12
+  Given user in the page                     # AppStepDefination.LoginStepDefination.userInThePage()
+  When user enter valid '4971' and '@Aa123'  # AppStepDefination.LoginStepDefination.userEnterValidAnd(java.lang.String,java.lang.String)
+  And click login button                     # AppStepDefination.LoginStepDefination.clickLoginButton()
+      java.lang.NoSuchMethodError: org.openqa.selenium.support.ui.WebDriverWait.<init>(Lorg/openqa/selenium/WebDriver;J)V
+	at SearchPage.LoginPage.clickLogin(LoginPage.java:63)
+	at AppStepDefination.LoginStepDefination.clickLoginButton(LoginStepDefination.java:33)
+	at âœ½.click login button(file:///C:/Users/Asus/Desktop/MobileAutomation/MobileAutomationWithPOM/src/test/resources/Features/01_appLogin.feature:7)
+
+  Then successfully open home page           # AppStepDefination.LoginStepDefination.successfullyOpenHomePage()
+]]></system-out>
+  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>
