@@ -22,11 +22,13 @@ Find variable's "Path" and select & click "Edit" then "New" and paste "bin" path
 2. Download and install Node.js(LTS)
 
 --> Run cmd: node --version (check successfully installed?)
+
 --> Run cmd: npm --version (check successfully installed?)
 
 3. Install Appium
 
 --> Run cmd: npm install -g appium (install)
+
 --> Run cmd: appium -v (check successfully installed?)
 
 4. Download and install Android studio for SDK and set up SDK & SDK's platform-tools and tools 
@@ -39,9 +41,11 @@ Variable value: JDK path (C:\Users\Asus\AppData\Local\Android\Sdk) [find it from
 click "OK"
 
 Find variable's "Path" and select & click "Edit" then "New" and paste "platform-tools" path (C:\Users\Asus\AppData\Local\Android\Sdk\platform-tools)
+
 Find variable's "Path" and select & click "Edit" then "New" and paste "tools" path (C:\Users\Asus\AppData\Local\Android\Sdk\tools)
 
 Run cmd: adb (check successfully setup?)
+
 Run cmd: adb --version(check successfully setup?)
 
 5. Download and install "Appium GUI (From Github)" & "Appium Studio" or "Appium Inspector" 
@@ -54,12 +58,15 @@ Run cmd: adb --version(check successfully setup?)
 7. For "Package and activity" name 
 
 --> Run cmd: adb shell 
+
 --> Run cmd: dumpsys window | grep -E "mCurrentFocus|mFocusedApp"  [Search Google "mfocus adb"]
 
 **Session Not created exception
+
 Run cmd: adb uninstall io.appium.settings
 
 * Search "Pointer Location" from your mobile for "TouchAction" point
+ 
 * Download "Vysor.exe" for mobile display's show in laptop
 
  
