@@ -61,12 +61,14 @@ Run cmd: adb --version(check successfully setup?)
 
 --> Run cmd: dumpsys window | grep -E "mCurrentFocus|mFocusedApp"  [Search Google "mfocus adb"]
 
-**Session Not created exception
-
-Run cmd: adb uninstall io.appium.settings
-
 * Search "Pointer Location" from your mobile for "TouchAction" point
  
 * Download "Vysor.exe" for mobile display's show in laptop
+
+**Session Not created exception [Original error: The instrumentation process cannot be initialized]
+
+Run cmd: adb uninstall io.appium.settings
+adb uninstall io.appium.uiautomator2.server
+adb uninstall io.appium.uiautomator2.server.test
 
  
