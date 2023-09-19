@@ -68,7 +68,9 @@ Run cmd: adb --version(check successfully setup?)
 **Session Not created exception [Original error: The instrumentation process cannot be initialized]
 
 Run cmd: adb uninstall io.appium.settings
+
 adb uninstall io.appium.uiautomator2.server
+
 adb uninstall io.appium.uiautomator2.server.test
 
  
